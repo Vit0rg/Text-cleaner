@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body
+{
+  height: 100vh;
+  background-color: hsl(254, 85%, 5%);
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1% ;
+}
+
+h1
+{
+  background-color: hsl(256, 100%, 3%);
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+  border: 1px solid hsl(288, 25%, 10%);
+  border-top: none;
+}
+
+.wrapper
+{
+  overflow-wrap: break-word;
+  height: 30vh;
+}
+
+input
+{
+  margin-top: 1%;
+  border-radius: 1%;
+  border: none;
+  overflow: hidden;
+  padding: .75%;
+  text-overflow: clip;
+  font-size: 1em;
+  width: 100%;
+  border: 1px solid hsl(288, 56%, 30%);
+}
+
+input:focus-visible
+{
+  outline-color: hsl(60, 100%, 25%);
+}
+
+#texto_filtrado
+{
+  margin-top: 1%;
+  padding: 1%;
+  max-height: 48%;
+  overflow-y: scroll;
+  border-radius: 1%;
+  background-color: hsl(268, 100%, 5%);
+  color: hsl(0, 0%, 100%);
+  border: .75px solid hsl(126, 50%, 10%);
+  font-size: 1em;
+  width: 100%;
+}
+
+img
+{
+  margin-top: 1%;
+  height: 40%;
+  filter: opacity(.5);
+}
+
+#rodapé
+{
+ text-align: center;
+ background-color: hsl(256, 100%, 3%);
+ width: 100%;
+ min-height: 10%;
+ margin-top: auto;
+ border: .5px solid hsl(198, 25%, 10%);
+ border-bottom: none;
+}
