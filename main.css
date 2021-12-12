@@ -5,32 +5,40 @@
   text-decoration: none;
 }
 
+:root
+{
+  --max: 100%;
+}
+
 body
 {
   height: 100vh;
-  background-color: hsl(254, 85%, 5%);
+  background-color: hsl(256, 100%, 3%);
   color: hsl(0, 0%, 100%);
   font-size: 18px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  margin: 0 1% ;
+  margin: 0 1.5%;
+  gap: 1%;
 }
 
 h1
 {
+  padding: 1%;
   background-color: hsl(256, 100%, 3%);
   font-size: 3em;
   margin: 0;
   text-align: center;
-  border: 1px solid hsl(288, 25%, 10%);
+  border: 1px solid hsl(288, 50%, 10%);
   border-top: none;
+  letter-spacing: 1px;
 }
 
-.wrapper
+#wrapper_entrada
 {
   overflow-wrap: break-word;
-  height: 30vh;
+  min-height: 1vh;
 }
 
 input
@@ -42,43 +50,62 @@ input
   padding: .75%;
   text-overflow: clip;
   font-size: 1em;
-  width: 100%;
-  border: 1px solid hsl(288, 56%, 30%);
+  width: var(--max);
+  border: 1px solid hsl(288, 50%, 10%);
 }
 
 input:focus-visible
 {
-  outline-color: hsl(60, 100%, 25%);
+  outline-color: hsl(60, 100%, 40%);
+}
+
+#wrapper_saida
+{
+  height: 60vh;
 }
 
 #texto_filtrado
 {
-  margin-top: 1%;
   padding: 1%;
-  max-height: 48%;
+  margin-top: 1%;
   overflow-y: scroll;
-  border-radius: 1%;
-  background-color: hsl(268, 100%, 5%);
+  background-color: hsl(124, 100%, 5%);
   color: hsl(0, 0%, 100%);
-  border: .75px solid hsl(126, 50%, 10%);
   font-size: 1em;
+  width: var(--max);
+  height: 80%;
+}
+
+.botoes
+{
+  margin-top: 1.5%;
   width: 100%;
 }
 
-img
+button
 {
-  margin-top: 1%;
-  height: 40%;
-  filter: opacity(.5);
+  min-width: max-content;
+  padding: .5%;
+  font-size: 1em;
+  text-overflow: clip;
+  border-radius: .5%;
 }
 
-#rodapé
+button:active
+{
+  background-color: hsl(126, 80%, 20%);
+  border-color: hsl(126, 50%, 10%);
+}
+
+footer
 {
  text-align: center;
+ padding: 1%;
+ font-size: 2em;
  background-color: hsl(256, 100%, 3%);
- width: 100%;
+ width: var(--max);
  min-height: 10%;
  margin-top: auto;
- border: .5px solid hsl(198, 25%, 10%);
+ border: 1px solid hsl(288, 50%, 10%);
  border-bottom: none;
 }

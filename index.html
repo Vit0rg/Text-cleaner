@@ -10,17 +10,28 @@
 </head>
 <body>
   <h1>Text Cleaner</h1>
-  <div class="wrapper">
+
+  <div id="wrapper_entrada">
     <input type="text" id="texto_original" value="" 
     placeholder="Insira aqui o texto original">
 
     <input type="text" id="lixo" value="" 
-    placeholder="Insira o lixo a ser removido" oninput="cleanData()">
-    
-    <p id =texto_filtrado>Texto filtrado</p>
+    placeholder="Insira aqui o trecho a ser removido" oninput="cleanData()">
   </div>
-  <img src="./img/JustMonika_logo.svg" alt="Just Monika">
+  
+  <div id="wrapper_saida">
+    <p id =texto_filtrado>Texto filtrado</p>
+    <div class="botoes">
+      <button onclick="Copy()">COPIAR</button>
+      <button onclick="Reset()">LIMPAR</button>
+      <button onclick="">🚧</button>
+      <button onclick="">🚧</button>
+      <button onclick="">🚧</button>
+      <button onclick="">🚧</button>
+    </div>
+    
+  </div>
 
-  <div id="rodapé"></div>
+  <footer>vit0rg</footer>
 </body>
 </html>
